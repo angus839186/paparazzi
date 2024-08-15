@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: 844b1469-d051-41ba-b4cb-af9f95d6a478
+    AppIdFusion: 
+    AppIdChat: 
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: asia
+    Server: 
+    Port: 0
+    ProxyServer: 
+    Protocol: 0
+    EnableProtocolFallback: 1
+    AuthMode: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  DevRegion: 
+  PunLogging: 1
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  StartInOfflineMode: 0
+  RpcList:
+  - ClickRpc
+  - DestroyRpc
+  - DestroySpaceship
+  - Fire
+  - ReduceTime
+  - RespawnSpaceship
+  - RPC_AddbrokenCameraAndCheck
+  - RPC_ChangeToAgent
+  - RPC_ChangeToPaparazzi
+  - RPC_GameEnd
+  - RPC_GameStart
+  - RPC_GameStatusCheck
+  - RPC_GetPhoto
+  - RPC_GotAttacked
+  - RPC_GotTracked
+  - RPC_placingTrap
+  - RPC_RemoveTarget
+  - RPC_SetTeamNumber
+  - RPC_SetWine
+  - RPC_TakeCamera
+  - RPC_TriggerAttack
+  - RPC_UpdateAgent
+  - RPC_UpdatePaparazzi
+  - RPC_UploadPhoto
+  - RPC_WineCD
+  - StuckStatus
+  - TakeWine
+  - Throw
+  - RPC_syncCoolDown
+  - RPC_TakeWine
+  - BreakWine
+  - RPC_SetTrack
+  - RPC_TakeDamage
+  - RPC_SetPhoto
+  - RPC_SetWineToFalse
+  - RPC_ChangeState
+  - RPC_OpenSignal
+  - SyncOpenSignal
+  - RPC_SetUpLoadPhoto
+  - RPC_Stuck
+  - RPC_attack
+  - RPC_ChangeParent
+  - RPC_LeaveParent
+  - RPC_Throw
+  - RPC_Repairing
+  - RPC_SetCameraAmount
+  - RPC_ThrowWine
+  - HammerSpeedUpEffect
+  DisableAutoOpenWizard: 1
+  ShowSettings: 1
+  DevRegionSetOnce: 1

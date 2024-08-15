@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Absinthe
+  - Paparazzi
+  - Photo
+  - SNG
+  - Agent
+  - jammer
+  - drowsy
+  - SpawnCamera
+  - 1F
+  - 2F
+  - SpawnPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Bar
+  - Signal
+  - star
+  - 1F
+  - 2F
+  - starIcon
+  - agentIcon
+  - Hint
+  - Loot
+  - Paparazzi
+  - Agent
+  - obstacle
+  - Window
+  - WeaponHand
+  - paparazziIcon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

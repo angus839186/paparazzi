@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ea1ba78a6a3114549a294f38b1664b8f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerListTransform: {instanceID: 0}
+  - playerListPrefab: {instanceID: 0}
+  - StartGameButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
