@@ -13,7 +13,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     public SpriteRenderer minimapSprite;
     public Sprite selfSprite;
 
-    [Header("²¾°Ê")]
+    [Header("ï¿½ï¿½ï¿½ï¿½")]
     public bool canMove;
     public CharacterController playerCC;
     public float speed;
@@ -25,7 +25,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     public AudioSource jumpAudio;
     public AudioClip jumpClip;
 
-    [Header("Äá¼v¾÷")]
+    [Header("ï¿½ï¿½vï¿½ï¿½")]
     public Camera miniMapCamera;
     public LayerMask SecondFloorMask;
     public LayerMask OneFloorMask;
@@ -34,19 +34,19 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     private const float NORMAL_FOV = 60f;
     private const float HOOKSHOT_FOV = 100f;
 
-    [Header("°Êµe")]
+    [Header("ï¿½Êµe")]
     public GameObject body;
     public GameObject hand;
     public Animator Anime;
     public Animator HandAnime;
 
-    [Header("ª¬ºA")]
+    [Header("ï¿½ï¿½ï¿½A")]
     public bool drowsy;
     public GameObject drowsyUI;
     public State state;
 
 
-    [Header("§ðÀ»")]
+    [Header("ï¿½ï¿½ï¿½ï¿½")]
     public bool HammerAttack;
     public float HammerAttackCD;
     public float HammerAttackCDtimer;
@@ -54,7 +54,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     public AudioSource weaponAudio;
     public AudioClip weaponAttackAudio;
 
-    [Header("¥áºl¤l")]
+    [Header("ï¿½ï¿½lï¿½l")]
     public GameObject BodyHammer;
     public GameObject HandHammer;
     public GameObject Hammer;
@@ -71,7 +71,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     public Image HammerShotImage;
     public GameObject flyingUI;
 
-    [Header("¯à¶q")]
+    [Header("ï¿½ï¿½q")]
     public Image EnergyImage;
     public int energyCost;
     public int maxEnergy;
@@ -80,11 +80,11 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
     public AudioClip refillEnergyClip;
     public AudioClip outofEnergyClip;
 
-    [Header("¹CÀ¸¤À¼Æ")]
+    [Header("ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public int brokenCameraAmount;
     public GameSceneManager GM;
 
-    [Header("¨ä¥L")]
+    [Header("ï¿½ï¿½L")]
     public AudioListener audioListener;
     public Hinter _hint;
     public enum State
@@ -152,7 +152,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
                         }
                         else
                         {
-                            _hint.ChangeText("§A»Ý­n¦^¨ì­«¥ÍÂI¸É¥R¯à¶q!", true);
+                            _hint.ChangeText("ï¿½Aï¿½Ý­nï¿½^ï¿½ì­«ï¿½ï¿½ï¿½Iï¿½É¥Rï¿½ï¿½q!", true);
                             energyAudio.PlayOneShot(outofEnergyClip);
                             energyWarning.SetActive(true);
                             energyWarning.GetComponent<Animation>().Play();
@@ -167,7 +167,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
                         }
                         else
                         {
-                            _hint.ChangeText("§A»Ý­n¦^¨ì­«¥ÍÂI¸É¥R¯à¶q!", true);
+                            _hint.ChangeText("ï¿½Aï¿½Ý­nï¿½^ï¿½ì­«ï¿½ï¿½ï¿½Iï¿½É¥Rï¿½ï¿½q!", true);
                             energyAudio.PlayOneShot(outofEnergyClip);
                             energyWarning.SetActive(true);
                             energyWarning.GetComponent<Animation>().Play();
@@ -433,7 +433,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
             if (HammerAndShotPoint <= 4f)
             {
                 projectileRb.isKinematic = true;
-                projectileRb.velocity = Vector3.zero;
+                projectileRb.linearVelocity = Vector3.zero;
                 projectileRb.angularVelocity = Vector3.zero;
                 projectileRb.transform.position = HammerShotPosition + new Vector3(0.5f, 0, 0);
                 projectileRb.transform.LookAt(transform.position);
@@ -505,7 +505,7 @@ public class agentPlayerController : MonoBehaviourPunCallbacks
         flyingUI.SetActive(false);
         Rigidbody projectileRb = Hammer.GetComponent<Rigidbody>();
         projectileRb.isKinematic = false;
-        projectileRb.velocity = Vector3.zero;
+        projectileRb.linearVelocity = Vector3.zero;
         projectileRb.angularVelocity = Vector3.zero;
         projectileRb.gameObject.transform.SetParent(HammerShotTransform);
         projectileRb.gameObject.transform.position = HammerShotTransform.position;
